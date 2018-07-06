@@ -17,13 +17,13 @@ I applied Uncertainty Sampling as my query strategy for active learning. For the
 
 Install `matplotlib`, `NumPy`, and `scikit-learn`.
 
-$ git clone https://github.com/mpack2018/BioImageClassification.git
+    $ git clone https://github.com/mpack2018/BioImageClassification.git
 
 
 
 ## Tests
-$ python rfecexperiment.py
 
+    $ python rfecexperiment.py
 
 ## Features
 : variables to tune inside `rfecexperiment.py`
@@ -36,6 +36,5 @@ $ python rfecexperiment.py
 
 
 ## Future Work
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+If people like your project they?ll want to learn how they can use it. To do so include step by step guide to use your project.
 With some changes, i.e., data loading, in `run_experiment()` function under `rfecvexperiment.py` file, I can expand this project to other projects which want to apply the same active learning approach. I might update this so that it could be easily used in other projects.
-
