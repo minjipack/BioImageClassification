@@ -1,14 +1,41 @@
+
 # Active Learning (Machine Learning) Approach for Image Classification
+Implemented **Active(=Query) Learning** approach and Random Learning approach to classify 8 proteins. We can observe two different approaches' performance.
 
-It was a project in `Automation of Research/Machine Learning Robotics(02-750)` course.
 
-## Purpose
-To classify bio-image, i.e., protein images based on the subcellular localization patterns,
-Fluorescent microscopy can reveal the subcellular localization patterns of tagged proteins. 
+## Aim
+To classify bio-image, i.e., protein images based on the subcellular localization patterns, Fluorescent microscopy can reveal the subcellular localization patterns of tagged proteins.
 
-## Dataset
-The data was encoded as vectors representing subcellular localization patterns and labeled with protein names. There were 8 types of protein so it was basically multi-classification problem.
 
-## Approach
-I applied Uncertainty Sampling as my query strategy for active learning. For the dataset without noise, my SVM classifier based on active learning approach performed around 95%. But when the dataset including noise, the performance dropped significantly. In order to deal with the problem, I used recursive feature selection, which helps remove noisy feature and only include the features that are most helpful. After applying this, it reached around 90 %.
+### What is Active Learning?
+Active Learning is one kind of Machine Learning Paradigm that requires fewer training dataset to perform as good as supervised machine learning approach with large amounts of data. Sometimes, it even outperforms. Also, it can QUERY the label of data, which will be included as the training dataset that we want to learn from. Because of this property, it is also called as QUERY learning.
+
+I applied Uncertainty Sampling as my query strategy for active learning. For the dataset without noise, my SVM classifier based on active learning approach performed around 95%. But, for the dataset including noise, the performance dropped significantly. In order to deal with the problem, I used recursive feature selection, which helps remove noisy features and only include the features that are most helpful. After applying this, it reached around 90 %.
+
+
+## Installation
+
+Install `matplotlib`, `NumPy`, and `scikit-learn`.
+
+$ git clone https://github.com/mpack2018/BioImageClassification.git
+
+
+
+## Tests
+$ python rfecexperiment.py
+
+
+## Features
+: variables to tune inside `rfecexperiment.py`
+
+- MODE 					: the type of dataset (easy/moderate/difficult) under 
+- CLF 					: the classifier.
+
+- INITIAL_SAMPLES_SIZE	: based on your budget, you can tune the size of initial training set
+- UNCERTAIN_SAMPLES_ITER	: Based on your budget, you can tune the size of training set to query their true label to oracle.
+
+
+## Future Work
+If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+With some changes, i.e., data loading, in `run_experiment()` function under `rfecvexperiment.py` file, I can expand this project to other projects which want to apply the same active learning approach. I might update this so that it could be easily used in other projects.
 
