@@ -1,6 +1,6 @@
 
 # Active Learning (Machine Learning) Approach for Image Classification
-It was a course project, [02-450/02-750 Automation of Biological Research: Robotics and Machine Learning](https://sites.google.com/site/automationofbiologicalresearch/image-classification-project).
+It was a course project in [02-450/02-750 Automation of Biological Research: Robotics and Machine Learning](https://sites.google.com/site/automationofbiologicalresearch/image-classification-project).
 Implemented **Active(=Query) Learning** approach and Random Learning approach to classify 8 proteins. We can observe two different approaches' performance.
 
 
@@ -38,13 +38,13 @@ Install `matplotlib`, `NumPy`, and `scikit-learn`.
 ## Results
 
 SVM on Easy Dataset:
-![easy dataset](https://imgur.com/a/AWXetV7)
+![easy dataset](https://i.imgur.com/tOwDEVO.png)
 
 SVM on Moderate Dataset:
-![moderate dataset](https://imgur.com/a/AWXetV7)
+![moderate dataset](https://i.imgur.com/Md6LwRW.png)
 
 SVM on Difficult Dataset:
-![difficult dataset](https://imgur.com/a/XtfyuG5)
+![difficult dataset](https://i.imgur.com/f3ylPTI.png)
 
 ## Future Work
 If people like your project they?ll want to learn how they can use it. To do so include step by step guide to use your project.
