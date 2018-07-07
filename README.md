@@ -37,13 +37,10 @@ Install `matplotlib`, `NumPy`, and `scikit-learn`.
 
 ## Results
 
-SVM on Easy Dataset:
 ![easy dataset](https://i.imgur.com/tOwDEVO.png)
 
-SVM on Moderate Dataset:
 ![moderate dataset](https://i.imgur.com/Md6LwRW.png)
 
-SVM on Difficult Dataset:
 ![difficult dataset](https://i.imgur.com/f3ylPTI.png)
 
 ## Future Work
