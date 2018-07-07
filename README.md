@@ -1,5 +1,6 @@
 
 # Active Learning (Machine Learning) Approach for Image Classification
+It was a course project, [02-450/02-750 Automation of Biological Research: Robotics and Machine Learning](https://sites.google.com/site/automationofbiologicalresearch/image-classification-project).
 Implemented **Active(=Query) Learning** approach and Random Learning approach to classify 8 proteins. We can observe two different approaches' performance.
 
 
@@ -21,11 +22,11 @@ Install `matplotlib`, `NumPy`, and `scikit-learn`.
 
 
 
-## Tests
+## Usage
 
     $ python rfecexperiment.py
 
-## Features
+## Tunable parameters
 : variables to tune inside `rfecexperiment.py`
 
 - MODE 					: the type of dataset (easy/moderate/difficult) under 
@@ -34,6 +35,16 @@ Install `matplotlib`, `NumPy`, and `scikit-learn`.
 - INITIAL_SAMPLES_SIZE	: based on your budget, you can tune the size of initial training set
 - UNCERTAIN_SAMPLES_ITER	: Based on your budget, you can tune the size of training set to query their true label to oracle.
 
+## Results
+
+SVM on Easy Dataset:
+![easy dataset](https://imgur.com/a/AWXetV7)
+
+SVM on Moderate Dataset:
+![moderate dataset](https://imgur.com/a/AWXetV7)
+
+SVM on Difficult Dataset:
+![difficult dataset](https://imgur.com/a/XtfyuG5)
 
 ## Future Work
 If people like your project they?ll want to learn how they can use it. To do so include step by step guide to use your project.
